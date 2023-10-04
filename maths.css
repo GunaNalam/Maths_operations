@@ -1,0 +1,37 @@
+#division{background-image: url('division.png');}
+
+#multi1{background-image: url('multi.png');}
+
+#subt{background-image: url('sub.png');}
+
+#addition{background-image: url('addition.png');}
+
+.nav-link{
+    opacity: 0.5;
+    font-size: larger;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    color: red;
+}
+
+
+.padding{
+    position: absolute;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 7rem;
+    padding-right: 9rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.margin-top{
+    margin-top: 14rem;
+}
+
+#main{
+    margin-top: 10rem;
+}

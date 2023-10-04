@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="maths.js"></script>
+    <link rel="stylesheet" href="maths.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="main">
+            <div class="col-12">
+                <nav class="navbar navbar-expand">
+                    <div class="col-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item pr-2 w-100 h-100">
+                                <a href="javascript:divide" class="nav-link padding" onclick="redirect('div')" id="division" >Division</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav nav-pills">
+                        <li class="nav-item pr-2 w-100 h-100">
+                            <a href="javascript:divide" class="nav-link padding" onclick="redirect('multi')" id="multi1" >Multiply</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item pr-2 w-100 h-100">
+                                <a href="javascript:divide" class="nav-link padding" onclick="redirect('add')" id="addition" >Addition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item pr-2 w-100 h-100">
+                                <a href="javascript:divide" class="nav-link padding" onclick="redirect('sub')" id="subt" >Subtraction</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pt-2 bg-info" id="main-page" hidden>
+        <div class="row mt-2 ">
+            <div class="col-2 text-end">
+                <label>1st Number: </label>
+            </div>
+            <div class="col-5">
+                <div class="form-group mx-auto ">
+                    <input type="number" class="form-control" id="number1" placeholder="Enter the 1st Number"> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-2 text-end">
+                <label>2nd Number: </label>
+            </div>
+            <div class="col-5">
+                <div class="form-group mx-auto">
+                    <input type="number" class="form-control" id="number2" placeholder="Enter the 2nd Number"> 
+                </div>
+            </div>
+        </div>
+        <div class="row"  >
+            <div class="offset-4 mt-4 col-4">
+                <button class="btn btn-primary" id="div" onclick="func('div')" hidden>Divide</button>
+                <button class="btn btn-primary" id="multi" onclick="func('multi')" hidden>Multiply</button>
+                <button class="btn btn-primary" id="sub" onclick="func('sub')" hidden>Subtract</button>
+                <button class="btn btn-primary" id="add" onclick="func('add')" hidden>Add</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-2 mt-4 col-9 bg-warning p-4 text-center display-4" hidden  id="Result" ></div>    
+            <div class="col-4 margin-top">
+                <button class="btn btn-primary mb-3" onclick="call_prev('main-page')">Previous</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

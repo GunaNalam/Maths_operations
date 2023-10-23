@@ -35,3 +35,19 @@
 #main{
     margin-top: 10rem;
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+::-webkit-scrollbar-track {
+  background: #0dcaf0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0dcaf0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0dcaf0;
+}
